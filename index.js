@@ -1,7 +1,7 @@
-/* global RDFaProcessor */
 var rdf = require('rdf-ext')
 var util = require('util')
 var DomParser = require('rdf-parser-dom')
+var RDFaProcessor = require('node-green-turtle/RDFaProcessor')
 
 var RdfaParser = function () {
   DomParser.call(this, rdf)
@@ -37,8 +37,11 @@ RdfaParser.prototype.process = function (data, callback, base, filter, done) {
           }
         } else {
           if (value.type === 'http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML') {
-            // TODO:
-            return null
+            if (value.value.length === 0) {
+              return rdf.createLiteral('', null, rdf.createNamedNode(value.type))
+            }
+
+            return rdf.createLiteral(value.value[0].parentNode.innerHTML.toString(), value.language, rdf.createNamedNode(value.type))
           }
 
           if (value.type === 'http://www.w3.org/1999/02/22-rdf-syntax-ns#object') {

@@ -1,10 +1,9 @@
 {
   "name": "rdf-parser-rdfa",
-  "version": "0.3.0-rc1",
+  "version": "0.3.0",
   "description": "RDFa parser that follows the RDF Interface specification",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -23,7 +22,8 @@
   },
   "homepage": "https://github.com/rdf-ext/rdf-parser-rdfa",
   "dependencies": {
-    "rdf-ext": "^0.3.0-rc1",
-    "rdf-parser-dom": "^0.3.0-rc1"
+    "node-green-turtle": "^1.4.0",
+    "rdf-ext": "^0.3.0",
+    "rdf-parser-dom": "^0.3.0"
   }
 }

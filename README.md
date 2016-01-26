@@ -4,4 +4,4 @@ RDFa parser that follows the RDF Interface specification based on [Green Turtle]
 
 ## Warning!
 
-This code works only in the browser and requires RDFaProcessor.js from Green Turtle!
+This code works only in the browser!
