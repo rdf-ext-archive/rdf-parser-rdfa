@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/rdf-ext/rdf-parser-rdfa",
   "dependencies": {
-    "node-green-turtle": "^1.4.0",
+    "green-turtle": "git://github.com/bergos/green-turtle.git#master",
     "rdf-ext": "^0.3.0",
     "rdf-parser-dom": "^0.3.0"
   }
