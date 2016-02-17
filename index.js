@@ -1,5 +1,5 @@
 var rdf = require('rdf-ext')
-var util = require('util')
+var inherits = require('inherits')
 var DomParser = require('rdf-parser-dom')
 var RDFaProcessor = require('green-turtle').RDFaProcessor
 
@@ -7,7 +7,7 @@ var RdfaParser = function () {
   DomParser.call(this, rdf)
 }
 
-util.inherits(RdfaParser, DomParser)
+inherits(RdfaParser, DomParser)
 
 RdfaParser.prototype.process = function (data, callback, base, filter, done) {
   var self = this
