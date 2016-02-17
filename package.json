@@ -3,8 +3,7 @@
   "version": "0.3.0",
   "description": "RDFa parser that follows the RDF Interface specification",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/rdf-ext/rdf-parser-rdfa.git"
@@ -23,6 +22,7 @@
   "homepage": "https://github.com/rdf-ext/rdf-parser-rdfa",
   "dependencies": {
     "green-turtle": "git://github.com/bergos/green-turtle.git#master",
+    "inherits": "^2.0.1",
     "rdf-ext": "^0.3.0",
     "rdf-parser-dom": "^0.3.0"
   }
