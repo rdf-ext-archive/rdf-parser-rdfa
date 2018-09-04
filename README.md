@@ -1,3 +1,5 @@
+# This package is no longer maintained and not compatible with the latest RDF-Ext version
+
 # rdf-parser-rdfa
 
 RDFa parser that follows the RDF Interface specification based on [Green Turtle](https://github.com/alexmilowski/green-turtle).
